@@ -6,3 +6,11 @@ let costoFinal = precioUnitario * cantidadDeseada
 
 
 console.log (costoFinal)
+
+
+
+if (cantidadDeseada => 5) { -10% 
+    
+}
+
+if ()
