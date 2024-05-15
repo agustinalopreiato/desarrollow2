@@ -2,15 +2,17 @@ let nombreProducto = "Aire acondicionado"
 let precioUnitario = 900000
 let cantidadDeseada = prompt ("Ingrese la cantidad de aires acondicionados que desea comprar")
 
-let costoFinal = precioUnitario * cantidadDeseada 
+let costoTotal = precioUnitario * cantidadDeseada
+let descuento = costoTotal * 0.1
 
+if ( cantidadDeseada >= 5) {
 
-console.log (costoFinal)
-
-
-
-if (cantidadDeseada => 5) { -10% 
-    
+ CostoTotal = precioUnitario * cantidadDeseada - descuento
 }
 
-if ()
+ else {
+
+CostoTotal= precioUnitario * cantidadDeseada ;
+}
+
+console.log ("El costo total de la compra es:" + CostoTotal);
