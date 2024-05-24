@@ -1,15 +1,15 @@
-let products = [ 
-    { name: "microondas" , precio: 300000 , stock:  10             },
-    { name: "cafetera", precio:  80000  , stock:     23         },
-    { name: "smart tv", precio:  700000 , stock:     1           }
-]
+const producto = {
+    nombre: 'Camiseta' , 
+    precio: 10000 , 
+    cantidadDisponible : 4
+ } 
+console.log (producto)
+ let nombre = producto.nombre
+let cambioNombre = producto.nombre = 'Zapatillas' 
+producto.categoria = 'Calzado'
 
-for (let index = 0; index < products.length; index++) 
-    {console.log (`${products [index].name  } - precio : $${ products[index].precio  }
-    - stock : ${products [index].stock   }` );}
 
-products.pop ();
+console.log (producto)
 
-for (let index = 0; index < products.length; index++) {
-    console.log (`${products [index].name  } - precio : $${ products[index].precio  }
-    - stock : ${products [index].stock }` );}
+delete producto.cantidadDisponible
+console.log (producto)
