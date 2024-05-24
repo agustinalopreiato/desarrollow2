@@ -1,13 +1,15 @@
-function sumarProductos (precioUnitario , cantidadDeseada)
+let products = [ 
+    { name: "microondas" , precio: 300000 , stock:  10             },
+    { name: "cafetera", precio:  80000  , stock:     23         },
+    { name: "smart tv", precio:  700000 , stock:     1           }
+]
 
- { let totalgastado = precioUnitario * cantidadDeseada;
-  
-return totalgastado 
-}
+for (let index = 0; index < products.length; index++) 
+    {console.log (`${products [index].name  } - precio : $${ products[index].precio  }
+    - stock : ${products [index].stock   }` );}
 
+products.pop ();
 
-let precio = 500000
-let cantidad = 3
-let totalcompra = sumarProductos ( precio, cantidad)
-
-console.log ("El costo total de la compra es: $"+  totalcompra);
+for (let index = 0; index < products.length; index++) {
+    console.log (`${products [index].name  } - precio : $${ products[index].precio  }
+    - stock : ${products [index].stock }` );}
