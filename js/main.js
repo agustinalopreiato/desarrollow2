@@ -1,15 +1,7 @@
-const producto = {
-    nombre: 'Camiseta' , 
-    precio: 10000 , 
-    cantidadDisponible : 4
- } 
-console.log (producto)
- let nombre = producto.nombre
-let cambioNombre = producto.nombre = 'Zapatillas' 
-producto.categoria = 'Calzado'
+document.addEventListener("DOMContentLoaded", function() {
+    var precioProducto = document.getElementById("precioProducto");
+    precioProducto.innerText = "Precio $450";
 
-
-console.log (producto)
-
-delete producto.cantidadDisponible
-console.log (producto)
+    var nombreProducto = document.querySelector("#nombreProducto");
+    nombreProducto.style.color= "green"
+});
